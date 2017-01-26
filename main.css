@@ -1,0 +1,243 @@
+body,
+html,
+.main {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  padding: 0 10%;
+  z-index: 10;
+}
+
+nav#myScrollspy {
+  margin: 0;
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+}
+
+a span.braces {
+  font-size: 1.1em;
+}
+
+.braces {
+  font-weight: 900;
+}
+
+a,
+a:hover,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:hover {
+  color: #9B59B6;
+  text-decoration: none;
+}
+
+.portfolio a:hover {
+  font-weight: bold;
+}
+
+div.main,
+.about {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.mainTitle {
+  /*   text-align: center; */
+  /*   vertical-align: middle; */
+  /*   font-size: 10%; */
+}
+
+div.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+}
+
+div.social a {
+  font-size: 5em;
+  color: #9B59B6;
+  /* color: #2C3E50; */
+}
+
+div.social a:hover {
+  opacity: 0.7;
+}
+
+.about {
+  height: auto;
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+h3 {
+  padding: 1% 10%;
+  margin: 0;
+  font-size: 2.5em;
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+.about h3 {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+h3 span.braces {
+  font-size: 1.3em;
+}
+
+.about p {
+  text-align: justify;
+  padding: 1% 5% 1% 0;
+  /* padding: 1% 10%; */
+  font-size: 1.5em;
+  color: #ECF0F1;
+  margin: 0;
+}
+
+.about img {
+  width: 20%;
+  height: 20%;
+  padding: 2%;
+  margin-left: 3%;
+}
+
+.aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.contact,
+.portfolio {
+  display: block;
+  height: auto;
+}
+
+.contact form {
+  margin-left: 10%;
+  margin-right: 10%;
+  /* padding-bottom: 10%; */
+  /* padding-top: 5%; */
+  padding: 0 5% 5%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact h3 {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* margin: 0 10%; */
+  padding: 1% 10%;
+}
+
+.portfolio div.row {
+  padding: 1% 10%;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* margin: 0 10%; */
+}
+
+.portfolio h3 {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* margin: 0 10%; */
+}
+
+.portfolio img {
+  max-height: 182px;
+  width: 100%;
+}
+
+.portfolio figcaption {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.contact.parallax.webDev,
+.portfolio.parallax.code {
+  height: auto;
+}
+
+.footer {
+  background-color: #2C3E50;
+}
+
+.footer p {
+  text-align: center;
+}
+
+
+/* .ccs {
+  background-image: url('ccs.jpg');
+  background-image: url('http://static.panoramio.com/photos/original/5702777.jpg');
+} */
+
+.code {
+  background-image: url('html.jpg');
+  /* background-image: url('https://pace.oregonstate.edu/sites/default/files/styles/course_banner_large/public/images/course/cover/pace-oregon-state-html-css-coding-web-design.jpg?itok=tNEZncCn'); */
+}
+
+.webDev {
+  background-image: url('webDev.jpg');
+  /* opacity: 0.7; */
+  /* background-image: url('https://www.qltech.com.au/wp-content/uploads/2016/02/Web-Development.jpg'); */
+}
+
+.parallax {
+  height: 300px;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
